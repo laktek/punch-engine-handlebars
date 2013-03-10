@@ -10,9 +10,9 @@ Use this plugin to replace Punch's default Mustache template engine with [Handle
 
 * Open your Punch project's configurations (`config.json`) and add the following:
 
-		plugins: {
+		"plugins": {
 			
-			template_engine: "punch-engine-handlebars" 
+			"template_engine": "punch-engine-handlebars" 
 
 		}
 
