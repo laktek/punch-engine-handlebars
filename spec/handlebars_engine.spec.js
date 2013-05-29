@@ -29,7 +29,7 @@ describe("calling render", function(){
 		expect(Handlebars.compile).toHaveBeenCalledWith("template");
 	});
 
-	it("register each block helper", function(){
+	it("register each tag and block helper", function(){
     spyOn(Handlebars, "registerHelper");
     spyOn(Handlebars, "registerPartial");
     spyOn(Handlebars, "compile");
@@ -43,7 +43,7 @@ describe("calling render", function(){
 		spyOn(handlebars_instance, "emit");
 
 		handlebars_instance.render();
-		expect(Handlebars.registerHelper.callCount).toEqual(2);
+		expect(Handlebars.registerHelper.callCount).toEqual(3);
 	});
 
 	it("register each partial", function(){
